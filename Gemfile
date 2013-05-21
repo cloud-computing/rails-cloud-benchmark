@@ -39,3 +39,4 @@ gem 'jquery-rails'
 
 gem 'ruby-prof', group: :test
 gem 'test-unit', group: :test
+gem 'factory_girl_rails', '~> 4.0'
