@@ -36,3 +36,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'ruby-prof', group: :test
+gem 'test-unit', group: :test
