@@ -9,4 +9,13 @@ class BrowsingTest < ActionDispatch::PerformanceTest
   def test_homepage
     get '/'
   end
+
+  def test_blog_index
+    get '/blogs'
+  end
+
+  def test_blog_show
+    get '/blogs/1'
+  end
+  
 end

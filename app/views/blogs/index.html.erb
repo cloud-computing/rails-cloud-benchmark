@@ -1,0 +1,6 @@
+<% @blogs.each do |blog| %>
+  <%= blog.title %>
+  <%= blog.users[0].email %>
+  <%= blog.posts[0].title %>
+  <%= blog.posts[0].comments[0].content %>
+<% end %>

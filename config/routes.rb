@@ -12,7 +12,18 @@ RailsCloudBenchmark::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :blogs do
+    resources :posts do
+      resources :comments
+    end
+  end
 
+  resources :users do
+    resources :blogs
+    resources :posts
+    resources :comments
+  end
+  
   # Sample resource route with options:
   #   resources :products do
   #     member do
@@ -48,7 +59,7 @@ RailsCloudBenchmark::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'blogs#index'
 
   # See how all your routes lay out with "rake routes"
 
